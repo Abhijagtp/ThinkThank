@@ -3,7 +3,7 @@ import { API_ENDPOINTS } from "../constants/apiEndpoints"
 import { toast } from "react-toastify"
 
 const apiClient = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL,
+  baseURL: "https://thinkthank-backend.onrender.com/api",
   headers: { "Content-Type": "application/json" },
   withCredentials: true,
 })
