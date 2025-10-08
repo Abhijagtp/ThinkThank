@@ -3,7 +3,7 @@ import { API_ENDPOINTS } from "../constants/apiEndpoints"
 import { toast } from "react-toastify"
 
 const apiClient = axios.create({
-  baseURL: "http://127.0.0.1:8000/api",
+  baseURL: process.env.REACT_APP_API_BASE_URL || "http://127.0.0.1:8000/api",
   headers: { "Content-Type": "application/json" },
   withCredentials: true,
 })
